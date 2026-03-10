@@ -1,0 +1,12 @@
+{
+  "name": "studio",
+  "version": "0.1.0",
+  "description": "Template-driven data generation and delivery engine.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "demo": "node src/index.js",
+    "lint": "node --check src/index.js src/services/templateService.js src/services/templateRegistry.js src/services/renderers/discordEmbedRenderer.js src/delivery/dispatchService.js src/delivery/providers/discordWebhookDelivery.js"
+  }
+}
