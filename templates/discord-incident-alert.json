@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "template": {
+    "id": "discord-incident-alert",
+    "name": "Discord Incident Alert",
+    "description": "Sends an incident update to one or more Discord webhooks.",
+    "tags": ["incident", "discord"],
+    "type": "DISCORD_EMBED",
+    "owner": {
+      "franchiseId": "franchise-1",
+      "userId": "user-1",
+      "updatedBy": "user-1"
+    },
+    "timestamps": {
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  },
+  "delivery": {
+    "destinations": [
+      {
+        "type": "DISCORD_WEBHOOK",
+        "data": {
+          "content": "🚨 Incident notification"
+        },
+        "config": {
+          "webhookUrl": "https://discord.com/api/webhooks/example",
+          "threadId": "",
+          "sendAsAttachement": false
+        }
+      }
+    ]
+  },
+  "data": {
+    "title": "Default Incident Title",
+    "description": "Default incident description.",
+    "url": "",
+    "color": 16711680,
+    "timestamp": "",
+    "footer": {
+      "text": "",
+      "iconUrl": ""
+    },
+    "image": {
+      "url": ""
+    },
+    "thumbnail": {
+      "url": ""
+    },
+    "author": {
+      "name": "",
+      "url": "",
+      "iconUrl": ""
+    },
+    "fields": [
+      {
+        "name": "",
+        "value": "",
+        "inline": false
+      }
+    ]
+  }
+}
